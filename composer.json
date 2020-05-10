@@ -1,0 +1,50 @@
+{
+  "name": "bkubicki/magento2-polish-noun-numeral-declension-adapter",
+  "description": "Magento 2 adapter for polish noun numeral declension library",
+  "type": "library",
+  "license": [
+    "MIT"
+  ],
+  "authors": [
+    {
+      "name": "Bartosz Kubicki",
+      "email": "b.w.kubicki@gmail.com"
+    }
+  ],
+  "version": "1.0.0",
+  "minimum-stability": "stable",
+  "require": {
+    "php": "^7.2.0|~7.3.0",
+    "bkubicki/polish-noun-numeral-declension": "^1.0",
+    "magento/framework": "^101.0|^102.0"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^8.0.0"
+  },
+  "keywords": [
+    "magento2",
+    "noun",
+    "declension",
+    "decle",
+    "numeral"
+  ],
+  "autoload": {
+    "files": [
+      "src/functions.php"
+    ]
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "BKubicki\\Magento2PolishNounNumeralDeclensionAdapter\\Test\\": "tests"
+    }
+  },
+  "repositories": [
+    {
+      "type": "composer",
+      "url": "https://repo.magento.com/"
+    }
+  ],
+  "scripts": {
+    "test-unit-coverage": "vendor/bin/phpunit -c phpunit.xml --testsuite 'Unit' --coverage-html coverage/coverage-html --colors=always"
+  }
+}

@@ -1,0 +1,7 @@
+.idea/
+.env
+.phpunit.result.cache
+auth.json
+docker-compose.yml
+docker/
+vendor/
